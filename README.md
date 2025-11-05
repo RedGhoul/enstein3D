@@ -28,6 +28,14 @@ Made in one week, during the <b>libGDX</b> Game Jam 15 December 2020.
 	* Implemented functionality to run game on MacOS.
 <br />
 
+## Documentation
+New to the codebase? Start here:
+*	[Architecture Overview](docs/ARCHITECTURE.md) - System design, project structure, and key components
+*	[Code Flow Guide](docs/CODE_FLOW.md) - Step-by-step execution flow and game loop explanation
+*	[To-Do List](readme/TODO.md) - Planned features and improvements
+<br />
+<br />
+
 ## What's next?
 Check out the [to do list](readme/TODO.md).
 <br />
