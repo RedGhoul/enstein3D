@@ -7,6 +7,8 @@ Foxenstein3D uses **[Tiled Map Editor](https://www.mapeditor.org/)**, an industr
 ## Table of Contents
 
 1. [Getting Started](#getting-started)
+   - [Installing Tiled Map Editor](#installing-tiled-map-editor)
+   - [Example Maps](#example-maps)
 2. [Required Layer Structure](#required-layer-structure)
 3. [Creating Your First Level](#creating-your-first-level)
 4. [Object Types and Properties](#object-types-and-properties)
@@ -24,11 +26,64 @@ Foxenstein3D uses **[Tiled Map Editor](https://www.mapeditor.org/)**, an industr
 2. Install the application for your operating system (Windows, macOS, or Linux)
 3. Launch Tiled
 
-### Opening Existing Maps
+### Example Maps
 
-To learn by example, open one of the existing maps:
-- `core/assets/maps/map01.tmx` - Main gameplay level (64x64 tiles)
-- `core/assets/maps/mapTitle.tmx` - Title screen level (64x64 tiles)
+The game includes **2 example maps** that you can use as learning references. These are excellent starting points for understanding level structure and design.
+
+#### map01.tmx - Main Gameplay Level
+
+**Location**: `core/assets/maps/map01.tmx`
+**Size**: 64x64 tiles (61KB)
+**Purpose**: Full gameplay demonstration map
+
+**Contains**:
+- **56 Skull enemies** - Shows extensive enemy placement strategies
+- **12 Doors** - Various lock configurations and orientations
+- **4 Keycards** - Collectible items for unlocking doors
+- **45 Wall collision rectangles** - Complete collision setup
+- **3 Enemy types**: Skull, Eye, Fireball
+- **Spawn and Exit points** - Complete level flow from start to finish
+- Floor and ceiling layers with varied tiles
+
+**Best for learning**: Complete level design, enemy placement strategies, keycard progression systems, complex layouts
+
+#### mapTitle.tmx - Title Screen Level
+
+**Location**: `core/assets/maps/mapTitle.tmx`
+**Size**: 64x64 tiles (47KB)
+**Purpose**: Simpler demonstration for title/menu screen
+
+**Contains**:
+- **1 Eye enemy** - Minimal enemy presence for background effect
+- **5 Doors** - Basic door configuration examples
+- **21 Wall collision rectangles** - Simpler collision layout
+- **Spawn point** - Player starting position
+- Floor and ceiling layers with basic design
+
+**Best for learning**: Basic map structure, simple layout design, minimal complexity
+
+#### How to Open Example Maps
+
+**In Tiled Map Editor:**
+1. Launch Tiled
+2. Go to **File > Open**
+3. Navigate to `core/assets/maps/`
+4. Open either `map01.tmx` or `mapTitle.tmx`
+
+**In a Text Editor:**
+You can also examine the `.tmx` files directly in any text editor to see the XML structure.
+
+#### What to Study in the Examples
+
+1. **Layer Organization** - See how floor, ceiling, and all object groups are structured
+2. **Door Properties** - Check how `direction`, `locked`, and `keytype` are set
+3. **Enemy Placement** - Notice spacing, positioning strategies, and variety
+4. **Collision Rectangles** - See how walls are defined in the `rects` layer
+5. **Spawn Points** - Find the `MapSpawn` teleport object and its placement
+6. **Item Placement** - See where keycards are positioned relative to locked doors
+7. **Tileset Usage** - Observe how `atlas01.tsx` and `atlasEnemies.tsx` are used
+
+**Recommendation**: Start with `mapTitle.tmx` since it's simpler and easier to understand, then move to `map01.tmx` to see a more complex level with full gameplay elements and advanced design patterns
 
 ---
 
